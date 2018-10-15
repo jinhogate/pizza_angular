@@ -1,0 +1,17 @@
+<div class="det-titre">
+  <h2>Informations sur la pizza</h2>
+</div>
+<div class="row detail">
+    <div class="col-4">
+      <div class="card affiche-detail">
+        <img src="{{pizza.url}}" class="card-img-top" alt="image de la pizza">
+        <div class="card-body">
+          <p>Nom: {{pizza.name | uppercase}}</p>
+          <p>Prix: {{pizza.price}} €</p>
+          <a class="card-link btn btn-success">Commander</a>
+          <button (click)="goBack()" class="btn btn-danger">Annuler</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
